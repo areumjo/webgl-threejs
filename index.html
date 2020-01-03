@@ -14,8 +14,21 @@
   </style>
 </head>
 <body>
-  <script src="js/three.js"></script>
-		<script>
-		</script>
+  <h2>Canvas example</h2>
+  <canvas id="canvas" width="300" height="300" >
+    An alternative text describing what your canvas display.
+    <!-- This text is provided if a browser is unable to render the canvas (or if can't render a canvas) -->
+  </canvas>
+  <!-- <script src="js/three.js">
+  </script> -->
+	<script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 30, 200, 100);	
+    ctx.moveTo(0, 100);
+    ctx.lineTo(200, 300);
+    ctx.stroke();
+  </script>
 </body>
 </html>
